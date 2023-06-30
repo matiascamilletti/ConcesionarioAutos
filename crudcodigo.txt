@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+</head>
+<body>
+    <section class="form-register">
+        <h4 align="center"> CRUD</h4>
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+          </div>
+          <br>
+        <input class="controls" type="text" name="Nombres" id="nombres" minlength="3" maxlength="15" placeholder=" Ingrese Marca">
+        <input class="controls" type="text" name="Direccion" id="direccion" minlength="5" maxlength="20" placeholder="Ingrese Modelo">
+        <input class="controls" type="text" name="Ciudad" id="ciudad" minlength="5" maxlength="20" placeholder="Ingrese Tipo de Vehiculo">
+        <input class="controls" type="text" name="Ciudad" id="ciudad" minlength="5" maxlength="20" placeholder="Ingrese Colores Disponibles">
+        <input class="controls" type="email" name="Correo Electronico" id="correo" minlength="5" maxlength="30" placeholder="Ingrese Precio">
+        <input class="controls1" type="text" name="Mensaje" id="mensaje" maxlength="infinite" placeholder="Ingrese si se encuentra disponible en el garage">
+        <input class="botons" type="submit"  value="Agregar" onclick="window.alert('Solo lo pueden usar los empleados de la concesionaria para cargar los datos')">
+        <input class="botons" type="submit"  value="Modificar" onclick="window.alert('Solo lo pueden usar los empleados de la concesionaria para cargar los datos')">
+        <input class="botons" type="submit"  value="Eliminar" onclick="window.alert('Solo lo pueden usar los empleados de la concesionaria para cargar los datos')">
+        <input class="botons" type="submit"  value="Limpiar" onclick="window.alert('Solo lo pueden usar los empleados de la concesionaria para cargar los datos')">
+    </section>
+    <div class="form-register">
+        <style>
+            *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.form-register{
+width: 1000px;
+background-color: #24303c;
+padding: 30px;
+margin: auto;
+margin-top: 100px;
+border-radius: 4px;
+font-family: 'calibri';
+color: white;
+}
+
+.form-register h4{
+font-size: 22px;
+margin-bottom: 20px;
+}
+
+.controls{
+width: 100%;
+background-color: #24303c;
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 16px;
+border: 1px solid #1f53c5;
+font-family: 'calibri';
+font-size: 18px;
+}
+
+.controls1{
+width: 100%;
+background-color: #24303c;
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 16px;
+border: 1px solid #1f53c5;
+font-family: 'calibri';
+font-size: 18px;
+}
+
+.form-register .botons{
+width: 100%;
+background-color: #1f53c5;
+border: none;
+padding: 12px;
+color: white;
+margin: 16px 0;
+font-size: 16px;
+}
+        </style>
+
+<div id="main-container1" align="center">
+    <h3>Autos Cargados</h3>
+    <table>
+        
+        <thead>
+            <tr>
+                <th>Marca</th><th>Modelo</th><th>Tipo</th><th>Colores Disponibles</th><th>Precio</th><th>Disponible</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Toyota</td><td>Yaris</td><td>Auto</td><td>Rojo y blanco</td><td>$5.500.000</td><td>Si</td>
+        </tr>
+        <tr>
+            <td>Volkswagen</td><td>Polo</td><td>Auto</td><td>Azul y Blanco</td><td>$6.345.000</td><td>Si</td>
+        </tr>
+        <tr>
+            <td>Ford</td><td>Mondeo</td><td>Auto</td><td>Negro y Rojo</td><td>$8.000.000</td><td>Si</td>
+        </tr>
+        <tr>
+            <td>Fiat</td><td>Mobi</td><td>Auto</td><td>Rojo y Blanco</td><td>$4.000.000</td><td>No</td>
+        </tr>
+        <tr>
+            <td>Chevrolet</td><td>Onix</td><td>Auto</td><td>Amarillo y Gris</td><td>$6.000.000</td><td>No</td>
+
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+
+    <div id="main-container2" align="center">
+        <h3>Camionetas Cargadas</h3>
+        <table>
+            
+            <thead>
+                <tr>
+                    <th>Marca</th><th>Modelo</th><th>Tipo</th><th>Colores Disponibles</th><th>Precio</th><th>Disponible</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Toyota</td><td>Hilux GR Sport</td><td>Chata</td><td>Gris, Negro y Rojo</td><td>$22.500.000</td><td>Si</td>
+            </tr>
+            <tr>
+                <td>Volkswagen</td><td> Amarok v6</td><td>Chata</td><td>Gris, Negro y Blanco</td><td>$21.765.000</td><td>Si</td>
+            </tr>
+            <tr>
+                <td>Ford</td><td>Ranger Raptor</td><td>Chata</td><td>Azul y Rojo</td><td>$45.000.000</td><td>Si</td>
+            </tr>
+            <tr>
+                <td>Renault</td><td>Alaskan</td><td>Chata</td><td>Blanco, Negro y Gris </td><td>$19.987.000</td><td>No</td>
+            </tr>
+            <tr>
+                <td>Nissan</td><td>Frontier</td><td>Chata</td><td>Blanco y Gris Oscuro</td><td>$19.530.700</td><td>No</td>
+
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="main-container3" align="center">
+        <h3>Suvs Cargadas</h3>
+        <table>
+            
+            <thead>
+                <tr>
+                    <th>Marca</th><th>Modelo</th><th>Tipo</th><th>Colores Disponibles</th><th>Precio</th><th>Disponible</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Toyota</td><td>Cross</td><td>Suvs</td><td>Rojo, blanco y Negro</td><td>$13.100.000</td><td>Si</td>
+            </tr>
+            <tr>
+                <td>Volkswagen</td><td>T-Cross</td><td>Suvs</td><td>Azul, Blanco y Negro</td><td>$14.345.000</td><td>Si</td>
+            </tr>
+            <tr>
+                <td>Ford</td><td>Bronco</td><td>Suvs</td><td>Negro y Rojo</td><td>$17.780.000</td><td>Si</td>
+            </tr>
+            <tr>
+                <td>Chevrolet</td><td>Trax</td><td>Suvs</td><td>Rojo, Blanco y Amarillo</td><td>$15.000.000</td><td>No</td>
+            </tr>
+            <tr>
+                <td>Renault</td><td>Koleos</td><td>Suvs</td><td>Blanco y Gris</td><td>$14.400.000</td><td>No</td>
+
+            </tr>
+        </table>
+
+    <style>
+        body{
+        font-family: Arial;
+       
+    }
+    
+    #main-container{
+        margin: 150px;
+        width: 600px;
+    
+    }
+    
+    table{
+        width: 100%;
+        background-color: rgb(192, 55, 55);
+        text-align: left;
+        border-collapse: collapse;
+    }
+    
+    th, td{
+        border: solid 1px black;
+        padding: 20px;
+    }
+    
+    thead{
+        background-color: #246355;
+        border-bottom: solid 5x #0f362d;
+        color: white;
+    }
+    
+    tr:nth-child(even){
+        background-color: rgb(104, 32, 32);
+    
+    }
+    
+    tr:hover{
+        background-color: #369681;
+        color:rgb(195, 41, 41);
+    
+    }
+    
+    
+    </style>
+    
+        </div>
+    
+</div>
+    
+</body>
+</html>
